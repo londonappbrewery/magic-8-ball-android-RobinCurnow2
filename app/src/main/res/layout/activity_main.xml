@@ -13,20 +13,6 @@
     tools:context=".MainActivity">
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_gravity="center_horizontal"
-        android:animateLayoutChanges="false">
-
-        <ImageView
-            android:id="@+id/image_eight_ball"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ball1" />
-    </RelativeLayout>
-
-    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="false"
@@ -40,23 +26,33 @@
             android:gravity="center"
             android:text="@string/Slogan"
             android:textColor="#000000"
+            android:textSize="20sp"
             android:textStyle="bold" />
     </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_gravity="center_horizontal">
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_horizontal"
+        android:animateLayoutChanges="false">
 
-        <Button
-            android:id="@+id/button_ask"
-            android:layout_width="wrap_content"
+        <ImageView
+            android:id="@+id/image_eight_ball"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:background="#3F51B5"
-            android:text="@string/button"
-            android:textColor="#ffffff" />
+            app:srcCompat="@drawable/ball1" />
     </RelativeLayout>
+
+    <Button
+        android:id="@+id/button_ask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="75dp"
+        android:background="#3F51B5"
+        android:text="@string/button"
+        android:textColor="#ffffff" />
 
 </RelativeLayout>
